@@ -1,0 +1,368 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@300&display=swap');
+
+* {
+   box-sizing:border-box;
+   padding:0;
+   border:0;
+   margin:0;
+   font-family: 'Varela Round', sans-serif;
+}
+
+body {
+   width:100vw;
+   height:100vh;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   background:rgba(0,0,0,.8);
+   color:#F3F3F7;
+   overflow:hidden;
+}
+
+a {
+   text-decoration:none;
+}
+
+#background-image {
+   position:fixed;
+   width:100vw;
+   height:100vh;
+   object-fit:cover;
+   top:0;
+   left:0;
+   animation:charlie-desfocado 2s linear forwards;
+}
+
+@keyframes charlie-desfocado {
+   0% { filter:blur(0px); }
+
+   100% { filter:blur(18px); }
+}
+
+section {
+   width:100vw;
+   height:100vh;
+   position:absolute;
+   overflow-y:auto;
+   scrollbar-width:thin;
+   scrollbar-color:#F3F3F7;
+}
+
+section::-webkit-scrollbar {
+   width:5px;
+}
+
+section::-webkit-scrollbar-track {
+   background:black;
+   border-radius:0px;
+}
+
+section::-webkit-scrollbar-thumb {
+   background:#F3F3F7;
+   border-radius:5px;
+   border:3px solid #F3F3F7;
+}
+
+section h1, #countdown, #curiosidade, #classicos {
+   margin:auto;
+}
+
+section h1:nth-child(1) {
+   font-size:65px;
+   letter-spacing:6px;
+   width:387px;
+   margin-top:20px;
+}
+
+section #countdown {
+   width:450px;
+   text-align:center;
+   margin-top:30px;
+}
+
+section .tempo {
+   font-size:95px;
+   letter-spacing:6px;
+}
+
+section .etapas {
+   width:410px;
+   margin:auto;
+   list-style:none;
+   display:flex;
+   justify-content:space-between;
+   align-items:center;
+}
+
+.etapas li:nth-child(1), li:nth-child(2) {
+   margin-left:25px;
+}
+
+section #curiosidade {
+   margin:60px auto;
+   display:block;
+   width:400px;
+   height:90px;
+   text-align:center;
+   font-size:19px;
+   letter-spacing:2px;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+}
+
+section #curiosidade:after {
+   content:"";
+   animation:citacoes 100s linear infinite;
+}
+
+@keyframes citacoes {
+   0% {
+      content:"It's the Most Wonderful Time of the Year";
+   }
+
+   10% {
+      content:'Oh, the weather outside is frightful, but the fire is so delightful';
+   }
+
+   20% {
+      content:"I'm dreaming of a white Christmas";
+   }
+
+   30% {
+      content:'No man is a failure who has friends';
+   }
+
+   40% {
+      content:"I never thought it was such a bad little tree. It's not bad at all, really. Maybe it just needs a little love";
+   }
+
+   50% {
+      content:"We'll follow the old man wherever he wants to go";
+   }
+
+   60% {
+      content:"You see George, you've really had a wonderful life";
+   }
+
+   70% {
+      content:'Hark! The herald angels sing';
+   }
+
+   80% {
+      content:'Christ is born in bethlehem';
+   }
+
+   90% {
+      content:'Glory to the newborn king!';
+   }
+
+   100% {
+      content:'Have yourself a merry little Christmas';
+   }
+}
+
+#classicos {
+   width:400px;
+   opacity:.8;
+}
+
+#classicos h1 {
+   text-align:center;
+   font-size:23px;
+   width:300px;
+   animation:none;
+}
+
+#classicos ul {
+   list-style:none;
+}
+
+#classicos li {
+   font-size:19px;
+   font-weight:600;
+   letter-spacing:3px;
+   margin-top:20px;
+   text-align:center;
+   width:240px;
+   padding-top:10px;
+   padding-bottom:10px;
+   transition:.5s;
+}
+
+#classicos li:hover {
+   transform:scale(1.1);
+   transition:.5s;
+}
+
+#classicos li:nth-child(1), #classicos li:nth-child(3), li:nth-child(5) {
+   border-radius:0rem 2rem 3rem 2rem;
+}
+
+#classicos li:nth-child(2), li:nth-child(4), li:nth-child(6) {
+   border-radius:2rem 0rem 2rem 3rem;
+}
+
+#classicos li:nth-child(2), li:nth-child(4), li:nth-child(6) {
+   margin:20px 0px auto auto;
+}
+
+#classicos li:nth-child(1) {
+   margin-top:30px;
+   background:url('https://i.ibb.co/7Q44YVC/wonderful-life-min.jpg') no-repeat center;
+}
+
+#classicos li:nth-child(2) {
+    background:url('https://i.ibb.co/SfDs5Sb/frank-sinatra-min.jpg') no-repeat center;
+}
+
+#classicos li:nth-child(3) {
+    background:url('https://i.ibb.co/t8P0J98/cb-min.jpg') no-repeat center;
+}
+
+#classicos li:nth-child(4) {
+    background:url('https://i.ibb.co/qmNLHFX/bing-crosby-min.jpg') no-repeat center;
+}
+
+#classicos li:nth-child(5) {
+    background:url('https://i.ibb.co/JsZtKsh/white-chrismas-min.jpg') no-repeat center;
+}
+
+#classicos li:nth-child(6) {
+    background:url('https://i.ibb.co/XVpmdJ1/elvis-min.jpg') repeat center;
+}
+
+section #classicos a {
+   color:#F3F3F7;
+}
+
+section #noel {
+   margin:80px auto 50px auto;
+   width:80px;
+}
+
+section #noel img {
+   border-radius:2rem 4rem 3rem 3rem;
+   animation:noel 6s linear infinite;
+}
+
+@keyframes noel {
+   0% {
+      transform:translateY(0px);
+   }
+
+   50% {
+      transform:translateY(10px);
+   }
+
+   100% {
+      transform:translateY(0px);
+   }
+}
+
+@media (max-width:970px) {
+   section h1:nth-child(1) {
+      font-size:45px;
+      width:289px;
+   }
+
+   section #countdown {
+      width:365px;
+   }
+
+   section .tempo {
+      font-size:75px;
+   }
+
+   section .etapas {
+      width:340px;
+   }
+
+   .etapas li:nth-child(1) {
+      margin-left:20px;
+   }
+
+   .etapas li:nth-child(2) {
+      margin-left:25px;
+   }
+
+   section #curiosidade {
+      margin:50px auto;
+      width:300px;
+      font-size:15px;
+   }
+
+   #classicos {
+      width:280px;
+   }
+
+   #classicos h1 {
+      font-size:20px;
+      text-align:center;
+   }
+
+   #classicos ul {
+      margin-bottom:50px;
+   }
+
+   #classicos li {
+      font-size:15px;
+      width:200px;
+   }
+}
+
+@media (max-width:500px) {
+   section h1:nth-child(1) {
+      font-size:35px;
+      width:239px;
+   }
+
+   section #countdown {
+      width:278px;
+   }
+
+   section .tempo {
+      font-size:55px;
+   }
+
+   section .etapas {
+      width:265px;
+      font-size:12px;
+   }
+
+   .etapas li:nth-child(1) {
+      margin-left:20px;
+   }
+
+   .etapas li:nth-child(2) {
+      margin-left:16px;
+   }
+
+   section q {
+      margin:40px auto;
+      width:280px;
+      font-size:12px;
+   }
+
+   #classicos {
+      width:280px;
+   }
+
+   #classicos h1 {
+      display:flex;
+      justify-content:center;
+      width:280px;
+      font-size:17px;
+   }
+
+   #classicos ul {
+      margin-bottom:50px;
+   }
+
+   #classicos li {
+      font-size:12px;
+      width:170px;
+   }
+}
