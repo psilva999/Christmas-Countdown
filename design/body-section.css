@@ -87,6 +87,13 @@ section .tempo {
    letter-spacing:6px;
 }
 
+section .segundos {
+   position:absolute;
+   height:17px;
+   margin-left:455px;
+   margin-top:-43px;
+}
+
 section .etapas {
    width:410px;
    margin:auto;
@@ -96,8 +103,16 @@ section .etapas {
    align-items:center;
 }
 
-.etapas li:nth-child(1), li:nth-child(2) {
+.etapas li:nth-child(1) {
    margin-left:25px;
+}
+
+.etapas li:nth-child(2) {
+   margin-left:13px;
+}
+
+.etapas li:nth-child(3) {
+   margin-right:7px;
 }
 
 section #curiosidade {
@@ -186,7 +201,7 @@ section #curiosidade:after {
    letter-spacing:3px;
    margin-top:20px;
    text-align:center;
-   width:240px;
+   width:280px;
    padding-top:10px;
    padding-bottom:10px;
    transition:.5s;
@@ -276,6 +291,11 @@ section #noel img {
       font-size:75px;
    }
 
+   section .segundos {
+      margin-left:365px;
+      margin-top:-36px;
+   }
+
    section .etapas {
       width:340px;
    }
@@ -288,6 +308,10 @@ section #noel img {
       margin-left:25px;
    }
 
+   .etapas li:nth-child(3) {
+      margin-right:5px;
+   } 
+
    section #curiosidade {
       margin:50px auto;
       width:300px;
@@ -295,7 +319,7 @@ section #noel img {
    }
 
    #classicos {
-      width:280px;
+      width:350px;
    }
 
    #classicos h1 {
@@ -309,7 +333,7 @@ section #noel img {
 
    #classicos li {
       font-size:15px;
-      width:200px;
+      width:250px;
    }
 }
 
@@ -327,6 +351,11 @@ section #noel img {
       font-size:55px;
    }
 
+   section .segundos {
+      margin-left:280px;
+      margin-top:-31px;
+   }
+
    section .etapas {
       width:265px;
       font-size:12px;
@@ -337,7 +366,11 @@ section #noel img {
    }
 
    .etapas li:nth-child(2) {
-      margin-left:16px;
+      margin-left:10px;
+   }
+
+   .etapas li:nth-child(3) {
+      margin-right:3px;
    }
 
    section q {
@@ -363,6 +396,6 @@ section #noel img {
 
    #classicos li {
       font-size:12px;
-      width:170px;
+      width:210px;
    }
 }
