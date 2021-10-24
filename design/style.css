@@ -1,0 +1,109 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@300&display=swap');
+
+* {
+   box-sizing:border-box;
+   padding:0;
+   border:0;
+   margin:0;
+   font-family: 'Varela Round', sans-serif;
+}
+
+body {
+   position:absolute;
+   width:100vw;
+   height:100vh;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   background:rgba(0,0,0,.8);
+   color:#F3F3F7;
+   overflow:hidden;
+}
+
+#background-image {
+   position:fixed;
+   width:100vw;
+   height:100vh;
+   object-fit:cover;
+   top:0;
+   left:0;
+   filter:blur(2px);
+   animation:charlie-desfocado 5s linear forwards;
+}
+
+@keyframes charlie-desfocado {
+   0% { filter:blur(2px); }
+
+   100% { filter:blur(21px); }
+}
+
+section {
+   width:100vw;
+   height:100vh;
+   top:20px;
+   position:absolute;
+   overflow-y:auto;
+}
+
+section h1, #countdown, span, iframe {
+   margin:auto;
+}
+
+section h1 {
+   font-size:65px;
+   letter-spacing:6px;
+   width:387px;
+}
+
+section #countdown {
+   width:363px;
+   text-align:center;
+   margin-top:30px;
+}
+
+section .tempo {
+   font-size:75px;
+   letter-spacing:6px;
+}
+
+section .etapas {
+   width:340px;
+   margin:auto;
+   list-style:none;
+   display:flex;
+   justify-content:space-between;
+   align-items:center;
+}
+
+.etapas li:nth-child(1), li:nth-child(2) {
+   margin-left:20px;
+}
+
+section span {
+   margin:60px auto;
+   display:block;
+   width:300px;
+   font-size:19px;
+   letter-spacing:2px;
+}
+
+iframe {
+   display:block;
+   width:300px;
+   height:250px;
+}
+
+footer {
+   position:fixed;
+   bottom:0px;
+   right:0px;
+   width:100px;
+   height:30px;
+}
+
+footer, a {
+   font-family:'Stick No Bills', sans-serif;
+   color:black;
+}
