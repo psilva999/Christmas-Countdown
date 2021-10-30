@@ -72,7 +72,7 @@ section h1, #countdown, #curiosidade, #classicos {
 section h1:nth-child(1) {
    font-size:65px;
    letter-spacing:6px;
-   width:387px;
+   text-align:center;
    margin-top:20px;
 }
 
@@ -280,7 +280,6 @@ section #noel img {
 @media (max-width:970px) {
    section h1:nth-child(1) {
       font-size:45px;
-      width:289px;
    }
 
    section #countdown {
@@ -340,7 +339,6 @@ section #noel img {
 @media (max-width:500px) {
    section h1:nth-child(1) {
       font-size:35px;
-      width:239px;
    }
 
    section #countdown {
@@ -403,7 +401,6 @@ section #noel img {
 @media (max-width:350px) {
    section h1:nth-child(1) {
       font-size:30px;
-      width:215px;
    }
 
    section #countdown {
